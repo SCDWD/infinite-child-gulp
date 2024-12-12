@@ -983,21 +983,37 @@
     }
 
     .contact-form-v1 {
+
+        padding-top: 70px !important;
+        padding-bottom: 70px !important;
+
+        .title-2 {
+            text-align: left !important;
+            .gdlr-core-title-item-caption {
+                font-size: 16px !important;
+                line-height: 30px !important;
+            }
+        }
+
         .gdlr-core-pbf-wrapper-container {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
         }
-        .gdlr-core-pbf-column {
-            width: 100%;
-            &:first-child {
-                order: 2;
-            }
-            &:nth-child(2) {
-                order: 1;
-            }
+        // .gdlr-core-pbf-column {
+        //     width: 100%;
+        //     &:first-child {
+        //         order: 2;
+        //     }
+        //     &:nth-child(2) {
+        //         order: 1;
+        //     }
+        // }
+
+        .content-container {
+            padding: 0 15px !important;
         }
         .image-container {
-            margin-bottom: 70px;
+            padding: 0 15px !important;
         }
     }
 
@@ -1330,6 +1346,42 @@
     .faqs-default {
         .title-2 {
             margin-bottom: 50px;
+        }
+    }
+
+    .contact-form-v1 {
+
+        padding-top: 100px !important;
+        padding-bottom: 100px !important;
+
+        .title-2 {
+            text-align: left !important;
+            .gdlr-core-title-item-caption {
+                font-size: 16px !important;
+                line-height: 30px !important;
+            }
+        }
+
+        .gdlr-core-pbf-wrapper-container {
+            display: flex;
+            flex-direction: column;
+        }
+        // .gdlr-core-pbf-column {
+        //     width: 100%;
+        //     &:first-child {
+        //         order: 2;
+        //     }
+        //     &:nth-child(2) {
+        //         order: 1;
+        //     }
+        // }
+
+        .content-container {
+            padding: 0 15px !important;
+        }
+        .image-container {
+            padding: 0 15px !important;
+            margin-bottom: 30px !important;
         }
     }
 
