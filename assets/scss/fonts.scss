@@ -1,29 +1,66 @@
 /* For Desktop Fonts use Builder */
 
+.title-1 {
+    .gdlr-core-title-item-caption {
+        line-height: 32px;
+    }
+}
+
+.card-title {
+    .gdlr-core-title-item-caption {
+        line-height: 32px;
+    }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1280px) {
     /* Fonts Tab/Ipad*/
 
     .title-1 {
+        br {
+            display: none;
+        }
         text-align: center;
         .gdlr-core-title-item-title {
-            font-size: 35px !important;
-            line-height: 45px !important;
+            font-size: 40px !important;
+            line-height: 46px !important;
+        }
+        .gdlr-core-title-item-caption {
+            font-size: 16px !important;
+            line-height: 30px !important;
         }
     }
 
     .title-2 {
         text-align: center;
         .gdlr-core-title-item-title {
-            font-size: 30px !important;
-            line-height: 35px !important;
+            font-size: 28px !important;
+            line-height: 32px !important;
+        }
+        .gdlr-core-title-item-caption {
+            font-size: 18px !important;
+            line-height: 21px !important;
         }
     }
 
     .title-3 {
         text-align: center;
         .gdlr-core-title-item-title {
-            font-size: 25px !important;
-            line-height: 30px !important;
+            font-size: 20px !important;
+            line-height: 24px !important;
+        }
+    }
+
+    .card-title {
+        text-align: center;
+
+        .gdlr-core-title-item-title {
+            font-size: 18px !important;
+            line-height: 21px !important;
+        }
+
+        .gdlr-core-title-item-caption {
+            font-size: 16px !important;
+            line-height: 32px !important;
         }
     }
 
@@ -36,30 +73,51 @@
     /* Fonts Mobile */
 
     .title-1 {
+        br {
+            display: none;
+        }
         text-align: center;
         .gdlr-core-title-item-title {
-            font-size: 35px !important;
-            line-height: 45px !important;
+            font-size: 40px !important;
+            line-height: 46px !important;
+        }
+        .gdlr-core-title-item-caption {
+            font-size: 16px !important;
+            line-height: 30px !important;
         }
     }
-
+    
     .title-2 {
         text-align: center;
         .gdlr-core-title-item-title {
-            font-size: 30px !important;
-            line-height: 35px !important;
+            font-size: 28px !important;
+            line-height: 32px !important;
+        }
+        .gdlr-core-title-item-caption {
+            font-size: 18px !important;
+            line-height: 21px !important;
         }
     }
 
     .title-3 {
         text-align: center;
         .gdlr-core-title-item-title {
-            font-size: 25px !important;
-            line-height: 30px !important    ;
+            font-size: 20px !important;
+            line-height: 24px !important;
         }
     }
 
-    .dl-title {
+    .card-title {
         text-align: center;
+
+        .gdlr-core-title-item-title {
+            font-size: 18px !important;
+            line-height: 21px !important;
+        }
+
+        .gdlr-core-title-item-caption {
+            font-size: 16px !important;
+            line-height: 32px !important;
+        }
     }
 }
