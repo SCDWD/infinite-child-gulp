@@ -5,12 +5,12 @@
 footer {
 
     .infinite-footer-wrapper {
-        background-color: $pc-2;
+        background-color: $pc-1;
     }
     .infinite-copyright-wrapper {
-        background-color: $pc-3;
+        background-color: $pc-1;
         .infinite-copyright-text {
-			color: $sc-2;
+			color: $pc-2;
             font-size: 14px;
             font-style: normal;
             font-weight: 500;
@@ -20,7 +20,7 @@ footer {
     }
     .infinite-footer-container {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .infinite-footer-column:nth-child(2), .infinite-footer-column:nth-child(3) {
@@ -31,22 +31,41 @@ footer {
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        flex-direction: column;
 
         &:first-child {
+            width: 50%;
+            align-items: flex-start;
             #media_image-5 {
-                margin-bottom: 0;
+                margin-bottom: 45px;
                 img {
                     max-width: 210px !important;
+                }
+            }
+            #text-2 {
+                p {
+                    font-size: 14px;
+                    line-height: 32px;
+                    letter-spacing: 2%;
                 }
             }
         }
         &:nth-child(2) {
             padding-left: 15px;
             justify-content: flex-end;
+
+            h3 {
+                font-size: 15px;
+                font-weight: 500;
+                color: $pc-2;
+                text-transform: none;
+                margin-bottom: 30px;
+            }
+
             ul {
                 margin-bottom: 0;
                 li {
-					color: $sc-2 !important;
+					color: $pc-2 !important;
                     margin-bottom: 30px;
                     font-feature-settings: 'clig' off, 'liga' off;
                     font-size: 14px;
@@ -54,7 +73,7 @@ footer {
                     font-weight: 500;
                     line-height: 24px;
 					a {
-						color: $sc-2 !important;
+						color: $pc-2 !important;
 					}
                     &:last-child {
                         margin-bottom: 0;
@@ -63,12 +82,39 @@ footer {
             }
         }
         &:nth-child(3) {
-            padding-left: 15px;
-            justify-content: flex-end;
+            display: flex;
+			flex-direction: column;
+			justify-content: center;
+            align-items: flex-start;
+
+			#text-3 {
+				margin-bottom: 20px;
+				h3 {
+					font-size: 15px;
+					font-weight: 500;
+					color: $pc-2;
+					text-transform: none;
+					margin-bottom: 0;
+				}
+			}
+			#media_image-6 {
+				margin-bottom: 10px;
+				img {
+					max-width: 114px !important;
+				}
+			}
+			#media_image-7 {
+				img {
+					max-width: 114px !important;
+				}
+			}
+
+            /*
+
             ul {
                 margin-bottom: 0;
                 li {
-					color: $sc-2 !important;
+					color: $pc-2 !important;
                     margin-bottom: 30px;
                     font-feature-settings: 'clig' off, 'liga' off;
                     font-size: 14px;
@@ -76,13 +122,19 @@ footer {
                     font-weight: 500;
                     line-height: 24px;
 					a {
-						color: $sc-2 !important;
+						color: $pc-2 !important;
 					}
                     &:last-child {
                         margin-bottom: 0;
                     }
                 }
             }
+
+            */
+
+
+
+
         }
 
     }
@@ -101,17 +153,17 @@ footer {
             flex-direction: column;
         }
         .infinite-footer-column {
-            width: 100%;
+            width: 100% !important;
             display: flex;
-            justify-content: center !important;
-            align-items: center;
+            justify-content: flex-start !important;
+            align-items: center !important;
             padding: 0 15px !important;
             margin-bottom: 40px;
 
             &:first-child {
                 #media_image-5 {
-                    display: none;
-                    
+                    display: block;
+                    margin-bottom: 0 !important;
                 }
                 #media_image-6 {
                     display: block;
@@ -122,6 +174,9 @@ footer {
             }
 
             &:nth-child(2) {
+                h3 {
+                    text-align: center;
+                }
                 ul {
                     li {
                         text-align: center;

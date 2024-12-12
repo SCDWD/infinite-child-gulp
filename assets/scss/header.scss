@@ -21,7 +21,7 @@
 
 	.sf-menu {
 
-		display: flex;
+		display: flex !important;
 		align-items: center;
 
 		li {
@@ -29,14 +29,14 @@
 			a {
                 padding-top: 5px !important;
 				padding-bottom: 5px !important;
-				color: $sc-2;
+				color: $sc-1;
                 line-height: 24px;
 				&::before {
 					transition: 300ms;
 					height: 2.5px;
 					content: "";
 					position: absolute;
-					background-color: $sc-2;
+					background-color: $pc-1;
 					width: 0%;
 					bottom: 10%;
 				}
@@ -46,6 +46,33 @@
 					}
 				}
 			}
+
+			&:last-child {
+				a {
+                    display: flex;
+                    align-items: center;
+                    font-weight: 700;
+                    height: 40px;
+                    color: $pc-2;
+					background: $pc-1;
+					border: 1px solid $pc-1;
+					border-radius: 5px;
+					padding: 10px 20px !important;
+					transition: 600ms ease-in-out;
+
+					&:hover {
+                        color: $pc-2;
+						background-color: $sc-1;
+					}
+
+					&::before {
+						position: relative;
+                        content: inherit;
+					}
+
+				}
+			}
+
 		}
 	}
 }
